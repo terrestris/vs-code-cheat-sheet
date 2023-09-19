@@ -1,6 +1,6 @@
 ## VS Code Cheat Sheet
 
-# How to add a shortcut ❓
+### How to add a shortcut ❓
 
 In the current state this Cheat-Sheet is not connected to any database.
 But you can add shortcuts or extensions anyways.

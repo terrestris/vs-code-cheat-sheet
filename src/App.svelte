@@ -53,7 +53,7 @@
       grid-area: extensions;
     }
 
-    section.misc {
+    section.notes {
       grid-area: notes;
     }
   }
