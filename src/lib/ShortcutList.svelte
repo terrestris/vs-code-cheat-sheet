@@ -20,6 +20,6 @@
 
 <style lang="less">
   div.shortcut-list {
-    padding: 0 4em;
+    padding: 1em 4em;
   }
 </style>

@@ -20,6 +20,6 @@
 
 <style lang="less">
   div.extension-list {
-    padding: 0 4em;
+    padding: 1em 4em;
   }
 </style>

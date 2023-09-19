@@ -3,7 +3,7 @@
   import { initStore, notes } from '../stores/notes';
 </script>
 
-<div class="extension-list">
+<div class="notes">
   {#await initStore()}
     <p>Fetching Notes...</p>
   {:then}
@@ -14,7 +14,7 @@
 </div>
 
 <style lang="less">
-  div.extension-list {
-    padding: 0 4em;
+  div.notes {
+    padding: 1em 4em;
   }
 </style>

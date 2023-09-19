@@ -33,6 +33,5 @@
     .description {
       flex: 4;
     }
-
   }
 </style>
