@@ -1,5 +1,6 @@
 <script lang="ts">
   import ExtensionList from './lib/ExtensionList.svelte';
+  import Notes from './lib/Notes.svelte';
   import ShortcutList from './lib/ShortcutList.svelte';
 </script>
 
@@ -17,6 +18,7 @@
   </section>
   <section class="notes">
     <h3>Notes</h3>
+    <Notes />
   </section>
 </main>
 
