@@ -1,0 +1,76 @@
+[{
+  "name": "Copy",
+  "description": "Copys the selected code.",
+  "binding": ["Ctrl", "C"],
+  "benefit": 5
+}, {
+  "name": "Paste",
+  "description": "Pastes the selected code.",
+  "binding": ["Ctrl", "V"],
+  "benefit": 5
+}, {
+  "name": "Cut",
+  "description": "Cut ot the selected code.",
+  "binding": ["Ctrl", "X"],
+  "benefit": 5
+}, {
+  "name": "Move Line up",
+  "description": "Moves selected (cursor position) lines up.",
+  "vsCodeKey": "editor.action.moveLinesUpAction",
+  "binding": ["Alt", "ArrowUp"],
+  "benefit": 4
+}, {
+  "name": "Move Line down",
+  "description": "Moves selected (cursor position) lines down.",
+  "vsCodeKey": "editor.action.moveLinesDownAction",
+  "binding": ["Alt", "ArrowDown"],
+  "benefit": 4
+}, {
+  "name": "Delete Lines",
+  "description": "Deletes selected (cursor position) lines.",
+  "vsCodeKey": "editor.action.deleteLines",
+  "binding": ["Ctrl", "D"],
+  "benefit": 5
+}, {
+  "name": "Duplicate Lines",
+  "description": "Duplicate selected (cursor position) lines.",
+  "vsCodeKey": "editor.action.duplicateSelection",
+  "binding": ["Ctrl", "Shift", "D"],
+  "benefit": 5
+}, {
+  "name": "Insert Cursor below",
+  "description": "Adds a cursor below the current one.",
+  "vsCodeKey": "editor.action.insertCursorBelow",
+  "binding": ["Ctrl", "Shift", "ArrowDown"],
+  "benefit": 3
+}, {
+  "name": "Move to word end",
+  "description": "Move the cursor to the end of the word. Can be combined with `Shift` to select.",
+  "vsCodeKey": "cursorWordEndRight",
+  "binding": ["Ctrl", "Shift", "ArrowRight"],
+  "benefit": 4
+}, {
+  "name": "Move to word start",
+  "description": "Move the cursor to the start of the word. Can be combined with `Shift` to select.",
+  "vsCodeKey": "cursorWordStartLeft",
+  "binding": ["Ctrl", "Shift", "ArrowLeft"],
+  "benefit": 4
+}, {
+  "name": "Rename variable",
+  "description": "Rename selected (cursor position) variable. Also works for xml/html tags.",
+  "vsCodeKey": "editor.action.rename",
+  "binding": ["F2"],
+  "benefit": 5
+}, {
+  "name": "Goto file …",
+  "description": "Opens VS Code prompt to search a file.",
+  "vsCodeKey": "workbench.action.quickOpen",
+  "binding": ["Ctrl", "P"],
+  "benefit": 5
+}, {
+  "name": "Enter VS Code command …",
+  "description": "Opens VS Code prompt to enter a command.",
+  "vsCodeKey": "workbench.action.showCommands",
+  "binding": ["Ctrl", "Shift", "P"],
+  "benefit": 5
+}]

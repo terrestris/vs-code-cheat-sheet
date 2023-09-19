@@ -1,0 +1,25 @@
+<script lang="ts">
+  import { initStore, shortcuts } from '../stores/shortcuts';
+  import { sortBy } from '../utils';
+  import Shortcut from './Shortcut.svelte';
+
+  $: sortedShortcuts = $shortcuts.sort(sortBy('benefit', 'desc'));
+</script>
+
+<div class="shortcut-list">
+  {#await initStore()}
+    <p>Fetching Shortcutlist...</p>
+  {:then}
+    {#each sortedShortcuts as shortcut}
+      <Shortcut {shortcut} />
+    {/each}
+  {:catch error}
+    <p>Something went wrong: {error.message}</p>
+  {/await}
+</div>
+
+<style lang="less">
+  div.shortcut-list {
+    padding: 0 4em;
+  }
+</style>

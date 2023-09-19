@@ -1,0 +1,11 @@
+[{
+  "name": "Emoji",
+  "description": "Plugin to insert emoji from the command palette",
+  "link": "https://marketplace.visualstudio.com/items?itemName=Perkovec.emoji",
+  "benefit": 2
+}, {
+  "name": "Thunder Client",
+  "description": "Lightweight Rest API Client for VS Code",
+  "link": "https://www.thunderclient.com/",
+  "benefit": 5
+}]
