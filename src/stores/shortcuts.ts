@@ -16,7 +16,7 @@ const initialValue = [{
 export const shortcuts = writable<Shortcut[]>(initialValue);
 
 export const initStore = async () => {
-  const result = await fetch('/shortcuts.json');
+  const result = await fetch('./shortcuts.json');
   const json = await result.json();
   shortcuts.set(json);
 };

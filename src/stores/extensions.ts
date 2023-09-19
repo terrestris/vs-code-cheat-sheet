@@ -16,7 +16,7 @@ export const extensions = writable<Extension[]>(initialValue);
 export const sortedExtensions = derived(extensions, scs => scs.sort(sortBy('benefit', 'desc')));
 
 export const initStore = async () => {
-  const result = await fetch('/extensions.json');
+  const result = await fetch('./extensions.json');
   const json = await result.json();
   extensions.set(json);
 };
