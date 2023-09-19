@@ -26,6 +26,7 @@
 
 <style lang="less">
   .benefit {
-    font-size: 1.5em;
+    font-size: 0.8em;
+    white-space: nowrap;
   }
 </style>

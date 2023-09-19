@@ -6,33 +6,35 @@
   export let shortcut: Shortcut;
 </script>
 
-<div class="shortcut">
-  <label class="name" title={shortcut.vsCodeKey} for="">
+<tr class="shortcut">
+  <td class="name" title={shortcut.vsCodeKey}>
     <span>{shortcut.name}</span>
-  </label>
-  <Binding binding={shortcut.binding} />
-  <span class="description">{shortcut.description}</span>
-  <Benefit benefit={shortcut.benefit} />
-</div>
+  </td>
+  <td>
+    <Binding binding={shortcut.binding} />
+  </td>
+  <td>
+    <span class="description">{shortcut.description}</span>
+  </td>
+  <td class="benefit">
+    <Benefit benefit={shortcut.benefit} />
+  </td>
+</tr>
 
 <style lang="less">
-  div.shortcut {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  td {
+    vertical-align: top;
     padding: 1em 0;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    transition : border 500ms ease-out;
+  }
+  td.benefit {
+    vertical-align: middle;
+  }
+  tr:hover td {
+    border-color: #333;
+    border-color: #333;
 
-    .name {
-      padding: 0 1em;
-      flex: 1;
-    }
-
-    :global(.binding) {
-      flex: 2;
-    }
-
-    .description {
-      flex: 4;
-    }
   }
 </style>

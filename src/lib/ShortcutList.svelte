@@ -10,9 +10,11 @@
   {#await initStore()}
     <p>Fetching Shortcutlist...</p>
   {:then}
+    <table>
     {#each sortedShortcuts as shortcut}
       <Shortcut {shortcut} />
     {/each}
+    </table>
   {:catch error}
     <p>Something went wrong: {error.message}</p>
   {/await}
@@ -21,5 +23,8 @@
 <style lang="less">
   div.shortcut-list {
     padding: 1em 4em;
+    table {
+      border-spacing: 0;
+    }
   }
 </style>
