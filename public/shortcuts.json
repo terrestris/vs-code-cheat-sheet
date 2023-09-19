@@ -73,4 +73,16 @@
   "vsCodeKey": "workbench.action.showCommands",
   "binding": ["Ctrl", "Shift", "P"],
   "benefit": 5
+}, {
+  "name": "Format document",
+  "description": "Format the entire active file. Out-of-the-box support for JavaScript, TypeScript, JSON, HTML and CSS. Other languages work if matching formatters / language extensions are installed.",
+  "vsCodeKey": "editor.action.formatDocument",
+  "binding": ["Ctrl", "Shift", "I"],
+  "benefit": 5
+}, {
+  "name": "Format selection",
+  "description": "Format the selected text. Out-of-the-box support for JavaScript, TypeScript, JSON, HTML and CSS. Other languages work if matching formatters / language extensions are installed.",
+  "vsCodeKey": "editor.action.formatSelection",
+  "binding": ["Ctrl", "K", "Ctrl", "F"],
+  "benefit": 5
 }]
