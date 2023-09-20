@@ -1,4 +1,4 @@
-import { writable } from 'svelte/store';
+import { derived, writable } from 'svelte/store';
 import type { Shortcut } from '../models/Shortcut';
 
 const initialValue = [{
@@ -14,6 +14,17 @@ const initialValue = [{
 }] satisfies Shortcut[];
 
 export const shortcuts = writable<Shortcut[]>(initialValue);
+
+export const shortcutFilter = writable<string>();
+export const filteredShortcuts = derived([shortcuts, shortcutFilter], ([$shortcuts, $filter]) => {
+  if (!$filter) {
+    return $shortcuts;
+  }
+  return $shortcuts.filter(shortcut =>
+    shortcut.name.toLowerCase().includes($filter.toLowerCase()) ||
+    shortcut.vsCodeKey?.toLowerCase().includes($filter.toLowerCase())
+  )
+})
 
 export const initStore = async () => {
   const result = await fetch('./shortcuts.json');

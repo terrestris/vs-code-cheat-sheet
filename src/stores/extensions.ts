@@ -1,6 +1,5 @@
 import { derived, writable } from 'svelte/store';
 import type { Extension } from '../models/Extension';
-import { sortBy } from '../utils';
 
 const initialValue = [{
   name: 'Emoji',
@@ -13,7 +12,13 @@ const initialValue = [{
 
 export const extensions = writable<Extension[]>(initialValue);
 
-export const sortedExtensions = derived(extensions, scs => scs.sort(sortBy('benefit', 'desc')));
+export const extensionFilter = writable<string>();
+export const filteredExtensions = derived([extensions, extensionFilter], ([$extensions, $filter]) => {
+  if (!$filter) {
+    return $extensions;
+  }
+  return $extensions.filter(extension => extension.name.toLowerCase().includes($filter.toLowerCase()));
+})
 
 export const initStore = async () => {
   const result = await fetch('./extensions.json');

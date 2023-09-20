@@ -1,9 +1,9 @@
 <script lang="ts">
-  import { initStore, extensions } from '../stores/extensions';
-  import { sortBy } from '../utils';
+  import { initStore, filteredExtensions } from '../../stores/extensions';
+  import { sortBy } from '../../utils';
   import Extension from './Extension.svelte';
 
-  $: sortedExtensions = $extensions.sort(sortBy('benefit', 'desc'));
+  $: sortedExtensions = $filteredExtensions.sort(sortBy('benefit', 'desc'));
 </script>
 
 <div class="extension-list">
