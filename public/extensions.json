@@ -48,4 +48,24 @@
   "description": "Advanced text highlighter based on regexes. Useful for todos, annotations, colors etc.",
   "link": "https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-highlight",
   "benefit": 4
+}, {
+  "name": "Jest Runner",
+  "description": "Simple way to run or debug tests from the UI.",
+  "link": "https://marketplace.visualstudio.com/items?itemName=firsttris.vscode-jest-runner",
+  "benefit": 4
+}, {
+  "name": "EditorConfig for Visual Studio Code",
+  "description": "Applies settings found in .editorconfig files to the current workspace.",
+  "link": "https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig",
+  "benefit": 5
+}, {
+  "name": "React/Redux/React-Native snippets",
+  "description": "Contains many useful JavaScript and React/Redux snippets",
+  "link": "https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets",
+  "benefit": 3
+}, {
+  "name": "ESLint",
+  "description": "Integrates ESLint into VS Code",
+  "link": "https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint",
+  "benefit": 5
 }]
