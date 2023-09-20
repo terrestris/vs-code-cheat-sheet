@@ -47,13 +47,13 @@
   "name": "Move to word end",
   "description": "Move the cursor to the end of the word. Can be combined with `Shift` to select.",
   "vsCodeKey": "cursorWordEndRight",
-  "binding": ["Ctrl", "Shift", "ArrowRight"],
+  "binding": ["Ctrl", "ArrowRight"],
   "benefit": 4
 }, {
   "name": "Move to word start",
   "description": "Move the cursor to the start of the word. Can be combined with `Shift` to select.",
   "vsCodeKey": "cursorWordStartLeft",
-  "binding": ["Ctrl", "Shift", "ArrowLeft"],
+  "binding": ["Ctrl", "ArrowLeft"],
   "benefit": 4
 }, {
   "name": "Rename variable",
