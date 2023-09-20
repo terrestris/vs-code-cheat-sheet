@@ -1,7 +1,7 @@
 <script lang="ts">
-  import type { Shortcut } from '../models/Shortcut';
-  import Benefit from './Benefit.svelte';
-  import Binding from './Binding.svelte';
+  import type { Shortcut } from '../../models/Shortcut';
+  import Benefit from '../Benefit.svelte';
+  import Binding from '../Binding.svelte';
 
   export let shortcut: Shortcut;
 </script>
@@ -20,7 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1em 0;
+    padding: 0.5em 0;
 
     .name {
       padding: 0 1em;
@@ -33,6 +33,7 @@
 
     .description {
       flex: 4;
+      padding: 0 0.25em;
     }
   }
 </style>

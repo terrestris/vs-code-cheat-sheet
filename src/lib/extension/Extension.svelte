@@ -1,7 +1,7 @@
 <script lang="ts">
-  import type { Extension } from '../models/Extension';
-  import Benefit from './Benefit.svelte';
-  import OutlineIcon from './OutlineIcon.svelte';
+  import type { Extension } from '../../models/Extension';
+  import Benefit from '../Benefit.svelte';
+  import OutlineIcon from '../OutlineIcon.svelte';
 
   export let extension: Extension;
 </script>
@@ -24,6 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0.5em 0;
 
     .name {
       display: flex;

@@ -1,7 +1,9 @@
 <script lang="ts">
-  import ExtensionList from './lib/ExtensionList.svelte';
   import Notes from './lib/Notes.svelte';
-  import ShortcutList from './lib/ShortcutList.svelte';
+  import ExtensionList from './lib/extension/ExtensionList.svelte';
+  import ShortcutList from './lib/shortcut/ShortcutList.svelte';
+  import ShortcutFilter from './lib/shortcut/ShortcutFilter.svelte';
+    import ExtensionFilter from './lib/extension/ExtensionFilter.svelte';
 </script>
 
 <main>
@@ -9,11 +11,17 @@
     <h1>Visual Studio Code Cheat Sheet</h1>
   </header>
   <section class="shortcuts">
-    <h3>Shortcuts</h3>
+    <div class="section-header">
+      <h3>Shortcuts</h3>
+      <ShortcutFilter />
+    </div>
     <ShortcutList />
   </section>
   <section class="extensions">
-    <h3>Extensions</h3>
+    <div class="section-header">
+      <h3>Extensions</h3>
+      <ExtensionFilter />
+    </div>
     <ExtensionList />
   </section>
   <section class="notes">
@@ -21,7 +29,11 @@
     <Notes />
   </section>
   <footer>
-    <a style="float: right;" href="https://github.com/terrestris/vs-code-cheat-sheet" target="_blank">Code on GitHub</a>
+    <a
+      style="float: right;"
+      href="https://github.com/terrestris/vs-code-cheat-sheet"
+      target="_blank">Code on GitHub</a
+    >
   </footer>
 </main>
 
@@ -64,16 +76,19 @@
       }
     }
 
-    h3 {
+    .section-header {
+      top: 0;
+      padding: 1em;
       z-index: 1;
       box-shadow: 0 4px 10px -10px gray;
-      text-align: center;
-      padding: 1em;
       position: sticky;
-      top: 0;
+      background-color: white;
+    }
+
+    h3 {
+      text-align: center;
       margin-block-start: 0;
       margin-block-end: 0;
-      background-color: white;
     }
 
     section {

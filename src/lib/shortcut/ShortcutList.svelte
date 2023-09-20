@@ -1,9 +1,10 @@
 <script lang="ts">
-  import { initStore, shortcuts } from '../stores/shortcuts';
-  import { sortBy } from '../utils';
+  import { initStore, filteredShortcuts } from '../../stores/shortcuts';
+  import { sortBy } from '../../utils';
   import Shortcut from './Shortcut.svelte';
 
-  $: sortedShortcuts = $shortcuts.sort(sortBy('benefit', 'desc'));
+  $: sortedShortcuts = $filteredShortcuts.sort(sortBy('benefit', 'desc'));
+
 </script>
 
 <div class="shortcut-list">
