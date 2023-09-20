@@ -103,4 +103,22 @@
   "vsCodeKey": "editor.action.smartSelect.shrink",
   "binding": ["Shift", "Alt", "Left"],
   "benefit": 3
+}, {
+  "name": "Close Editor",
+  "description": "Closes currently active editor",
+  "vsCodeKey": "workbench.action.closeActiveEditor",
+  "binding": ["Ctrl", "W"],
+  "benefit": 5
+}, {
+  "name": "Close All Editors",
+  "description": "Closes all currently opened editors",
+  "vsCodeKey": "workbench.action.closeActiveEditor",
+  "binding": ["Ctrl", "K", "W"],
+  "benefit": 5
+}, {
+  "name": "Open Keyboard Shortcuts",
+  "description": "Show list of configured global key bindings",
+  "vsCodeKey": "workbench.action.openGlobalKeybindings",
+  "binding": ["Ctrl", "K", "S"],
+  "benefit": 4
 }]
