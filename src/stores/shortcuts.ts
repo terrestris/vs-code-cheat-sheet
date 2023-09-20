@@ -22,7 +22,8 @@ export const filteredShortcuts = derived([shortcuts, shortcutFilter], ([$shortcu
   }
   return $shortcuts.filter(shortcut =>
     shortcut.name.toLowerCase().includes($filter.toLowerCase()) ||
-    shortcut.vsCodeKey?.toLowerCase().includes($filter.toLowerCase())
+    shortcut.vsCodeKey?.toLowerCase().includes($filter.toLowerCase()) ||
+    shortcut.alias?.toLowerCase().includes($filter.toLowerCase())
   )
 })
 
