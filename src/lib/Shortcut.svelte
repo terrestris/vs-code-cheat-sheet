@@ -20,6 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 1em 0;
 
     .name {
       padding: 0 1em;

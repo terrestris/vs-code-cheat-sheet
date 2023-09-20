@@ -85,4 +85,22 @@
   "vsCodeKey": "editor.action.formatSelection",
   "binding": ["Ctrl", "K", "Ctrl", "F"],
   "benefit": 5
+}, {
+  "name": "Go to Next Problem",
+  "description": "Jumps to the next problem.",
+  "vsCodeKey": "editor.action.marker.nextInFiles",
+  "binding": ["F8"],
+  "benefit": 5
+}, {
+  "name": "Expand Selection",
+  "description": "Expands the current selection using semantic knowledge.",
+  "vsCodeKey": "editor.action.smartSelect.expand",
+  "binding": ["Shift", "Alt", "Right"],
+  "benefit": 4
+}, {
+  "name": "Shrink Selection",
+  "description": "Shrinks the current selection using semantic knowledge.",
+  "vsCodeKey": "editor.action.smartSelect.shrink",
+  "binding": ["Shift", "Alt", "Left"],
+  "benefit": 3
 }]
