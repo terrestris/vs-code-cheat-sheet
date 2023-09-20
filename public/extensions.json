@@ -2,10 +2,50 @@
   "name": "Emoji",
   "description": "Plugin to insert emoji from the command palette",
   "link": "https://marketplace.visualstudio.com/items?itemName=Perkovec.emoji",
-  "benefit": 2
+    "benefit": 2
 }, {
   "name": "Thunder Client",
   "description": "Lightweight Rest API Client for VS Code",
   "link": "https://www.thunderclient.com/",
   "benefit": 5
+}, {
+  "name": "eslint-disable-snippets",
+  "description": "Simple snippets to disable eslint rules",
+  "link": "https://marketplace.visualstudio.com/items?itemName=drKnoxy.eslint-disable-snippets",
+  "benefit": 2
+}, {
+  "name": "CSS Formatter",
+  "description": "Formatter for CSS",
+  "link": "https://marketplace.visualstudio.com/items?itemName=aeschli.vscode-css-formatter",
+  "benefit": 3
+}, {
+  "name": "indent-rainbow",
+  "description": "Makes indentation easier to read",
+  "link": "https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow",
+  "benefit": 4
+}, {
+  "name": "Material Icon Theme",
+  "description": "Material Design Icons for Visual Studio Code",
+  "link": "https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme",
+  "benefit": 2
+}, {
+  "name": "NGINX Configuration Language Support",
+  "description": "Nginx configuration helper for Visual Studio Code with many features including syntax highlight, auto-complete, in-editor documents, embedded Lua block, and more.",
+  "link": "https://marketplace.visualstudio.com/items?itemName=ahmadalli.vscode-nginx-conf",
+  "benefit": 2
+}, {
+  "name": "PlantUML",
+  "description": "Rich PlantUML support for Visual Studio Code.",
+  "link": "https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml",
+  "benefit": 2
+}, {
+  "name": "Svelte for VS Code",
+  "description": "Svelte language support for VS Code",
+  "link": "https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode",
+  "benefit": 4
+}, {
+  "name": "Highlight",
+  "description": "Advanced text highlighter based on regexes. Useful for todos, annotations, colors etc.",
+  "link": "https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-highlight",
+  "benefit": 4
 }]
