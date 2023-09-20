@@ -25,7 +25,9 @@
     <ExtensionList />
   </section>
   <section class="notes">
-    <h3>Notes</h3>
+    <div class="section-header">
+      <h3>Notes</h3>
+    </div>
     <Notes />
   </section>
   <footer>
