@@ -50,14 +50,14 @@
   "benefit": 4
 }, {
   "name": "Jest Runner",
-  "description": "Simple way to run or debug tests from the UI.",
+  "description": "Simple way to run or debug Jest tests from the UI.",
   "link": "https://marketplace.visualstudio.com/items?itemName=firsttris.vscode-jest-runner",
-  "benefit": 4
+  "benefit": 2
 }, {
   "name": "EditorConfig for Visual Studio Code",
   "description": "Applies settings found in .editorconfig files to the current workspace.",
   "link": "https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig",
-  "benefit": 5
+  "benefit": 4
 }, {
   "name": "React/Redux/React-Native snippets",
   "description": "Contains many useful JavaScript and React/Redux snippets",
