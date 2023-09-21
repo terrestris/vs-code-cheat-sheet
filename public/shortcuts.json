@@ -10,7 +10,7 @@
   "benefit": 5
 }, {
   "name": "Cut",
-  "description": "Cut ot the selected code.",
+  "description": "Cut out the selected code.",
   "binding": ["Ctrl", "X"],
   "benefit": 5
 }, {
