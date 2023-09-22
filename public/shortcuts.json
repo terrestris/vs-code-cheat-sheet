@@ -1,6 +1,6 @@
 [{
   "name": "Copy",
-  "description": "Copys the selected code.",
+  "description": "Copies the selected code.",
   "binding": ["Ctrl", "C"],
   "benefit": 5
 }, {
@@ -59,30 +59,35 @@
   "name": "Rename variable",
   "description": "Rename selected (cursor position) variable. Also works for xml/html tags.",
   "vsCodeKey": "editor.action.rename",
+  "alias": "refactor",
   "binding": ["F2"],
   "benefit": 5
 }, {
   "name": "Goto file …",
   "description": "Opens VS Code prompt to search a file.",
   "vsCodeKey": "workbench.action.quickOpen",
+  "alias": "open prompt",
   "binding": ["Ctrl", "P"],
   "benefit": 5
 }, {
   "name": "Enter VS Code command …",
   "description": "Opens VS Code prompt to enter a command.",
   "vsCodeKey": "workbench.action.showCommands",
+  "alias": "run execute prompt",
   "binding": ["Ctrl", "Shift", "P"],
   "benefit": 5
 }, {
   "name": "Format document",
   "description": "Format the entire active file. Out-of-the-box support for JavaScript, TypeScript, JSON, HTML and CSS. Other languages work if matching formatters / language extensions are installed.",
   "vsCodeKey": "editor.action.formatDocument",
+  "alias": "indent, autoindent",
   "binding": ["Ctrl", "Shift", "I"],
   "benefit": 5
 }, {
   "name": "Format selection",
   "description": "Format the selected text. Out-of-the-box support for JavaScript, TypeScript, JSON, HTML and CSS. Other languages work if matching formatters / language extensions are installed.",
   "vsCodeKey": "editor.action.formatSelection",
+  "alias": "indent autoindent",
   "binding": ["Ctrl", "K", "Ctrl", "F"],
   "benefit": 5
 }, {
@@ -95,6 +100,7 @@
   "name": "Expand Selection",
   "description": "Expands the current selection using semantic knowledge.",
   "vsCodeKey": "editor.action.smartSelect.expand",
+  "alias": "grow",
   "binding": ["Shift", "Alt", "Right"],
   "benefit": 4
 }, {
@@ -119,6 +125,7 @@
   "name": "Open Keyboard Shortcuts",
   "description": "Show list of configured global key bindings",
   "vsCodeKey": "workbench.action.openGlobalKeybindings",
+  "alias": "binding",
   "binding": ["Ctrl", "K", "S"],
   "benefit": 4
 }]
