@@ -12,27 +12,26 @@
   </header>
   <section class="shortcuts">
     <div class="section-header">
-      <h3>Shortcuts</h3>
+      <h2>Shortcuts</h2>
       <ShortcutFilter />
     </div>
     <ShortcutList />
   </section>
   <section class="extensions">
     <div class="section-header">
-      <h3>Extensions</h3>
+      <h2>Extensions</h2>
       <ExtensionFilter />
     </div>
     <ExtensionList />
   </section>
   <section class="notes">
     <div class="section-header">
-      <h3>Notes</h3>
+      <h2>Notes</h2>
     </div>
     <Notes />
   </section>
   <footer>
     <a
-      style="float: right;"
       href="https://github.com/terrestris/vs-code-cheat-sheet"
       target="_blank">Code on GitHub</a
     >
@@ -65,16 +64,18 @@
       h1 {
         letter-spacing: -0.4px;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 1.6em;
       }
     }
 
     footer {
       grid-area: footer;
+      text-align: right;
       background: #2c2c32;
       color: #ffffff;
       a {
         color: #ffffff;
+        margin-right: 0.5em;
       }
     }
 
@@ -87,7 +88,8 @@
       background-color: white;
     }
 
-    h3 {
+    h2 {
+      font-size: 1.25em;
       text-align: center;
       margin-block-start: 0;
       margin-block-end: 0;
@@ -107,6 +109,19 @@
 
     section.notes {
       grid-area: notes;
+    }
+  }
+
+  @media print {
+    main {
+      display: unset;
+      font-size: 9.5pt;
+    }
+
+    footer {
+      a[href]:after{
+        content: " | " attr(href);
+      }
     }
   }
 </style>

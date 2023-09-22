@@ -36,4 +36,10 @@
       padding: 0 0.25em;
     }
   }
+  @media print {
+    div.shortcut {
+      border-bottom: 1px solid darkgrey;
+      align-items: start;
+    }
+  }
 </style>

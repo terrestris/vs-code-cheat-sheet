@@ -17,4 +17,9 @@
   div.notes {
     padding: 1em 4em;
   }
+  @media print {
+    div.notes {
+      padding: 1em 0 0 0;
+    }
+  }
 </style>

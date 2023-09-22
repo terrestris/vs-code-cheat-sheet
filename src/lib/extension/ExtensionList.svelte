@@ -22,4 +22,9 @@
   div.extension-list {
     padding: 1em 4em;
   }
+  @media print {
+    div.extension-list {
+      padding: 1em 0 0 0;
+    }
+  }
 </style>
