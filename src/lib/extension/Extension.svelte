@@ -45,4 +45,11 @@
     }
 
   }
+
+  @media print {
+    div.extension {
+      border-bottom: 1px solid darkgrey;
+      align-items: start;
+    }
+  }
 </style>

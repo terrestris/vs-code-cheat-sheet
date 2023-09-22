@@ -22,4 +22,9 @@
       margin-bottom: -1px;
     }
   }
+  @media print {
+    input.extension-filter:placeholder-shown {
+      display: none;
+    }
+  }
 </style>

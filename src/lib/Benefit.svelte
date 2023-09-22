@@ -28,4 +28,9 @@
   .benefit {
     font-size: 1.5em;
   }
+  @media print {
+    .benefit {
+      display: none;
+    }
+  }
 </style>
