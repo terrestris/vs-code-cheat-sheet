@@ -89,13 +89,13 @@
   "vsCodeKey": "editor.action.formatSelection",
   "alias": "indent autoindent",
   "binding": ["Ctrl", "K", "Ctrl", "F"],
-  "benefit": 5
+  "benefit": 4
 }, {
   "name": "Go to Next Problem",
   "description": "Jumps to the next problem.",
   "vsCodeKey": "editor.action.marker.nextInFiles",
   "binding": ["F8"],
-  "benefit": 5
+  "benefit": 4
 }, {
   "name": "Expand Selection",
   "description": "Expands the current selection using semantic knowledge.",
@@ -114,13 +114,13 @@
   "description": "Closes currently active editor",
   "vsCodeKey": "workbench.action.closeActiveEditor",
   "binding": ["Ctrl", "W"],
-  "benefit": 5
+  "benefit": 4
 }, {
   "name": "Close All Editors",
   "description": "Closes all currently opened editors",
   "vsCodeKey": "workbench.action.closeActiveEditor",
   "binding": ["Ctrl", "K", "W"],
-  "benefit": 5
+  "benefit": 4
 }, {
   "name": "Open Keyboard Shortcuts",
   "description": "Show list of configured global key bindings",
