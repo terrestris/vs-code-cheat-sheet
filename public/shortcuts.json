@@ -128,4 +128,11 @@
   "alias": "binding",
   "binding": ["Ctrl", "K", "S"],
   "benefit": 4
+}, {
+  "name": "Collapse all open folders",
+  "description": "Collapses all expanded folders in Explorer when it's in focus",
+  "vsCodeKey": "list.collapseAll",
+  "alias": "collapse",
+  "binding": ["Ctrl", "ArrowLeft"],
+  "benefit": 3
 }]
